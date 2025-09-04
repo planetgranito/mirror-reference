@@ -4,9 +4,13 @@
     <title>Building an AI-Powered Dress Recommendation System</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&amp;family=Inter:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
 
     <style>
+       
+
         :root {
             --primary: #8B1538;
             --secondary: #D4AF37;
@@ -172,6 +176,7 @@
         }
     </style>
   </head>
+  
 
   <body>
     <!-- Table of Contents -->
@@ -203,48 +208,54 @@
           <li>
             <a href="#advanced-techniques" class="toc-link block py-1 text-gray-600 hover:text-gray-900">6. Advanced Techniques</a>
           </li>
+          <li>
+            <a href="#team" class="toc-link block py-1 text-gray-600 hover:text-gray-900">7. Team Members</a>
+          </li>
         </ul>
       </div>
     </nav>
 
-    <!-- Main Content -->
-    <main class="main-content">
       <!-- Hero Section -->
-      <section id="hero" class="px-8 py-12 fade-in">
-        <div class="max-w-7xl mx-auto">
-          <div class="hero-grid">
-            <div class="hero-image bg-gradient-to-br from-rose-100 to-amber-100 flex items-center justify-center">
-              <img src="https://kimi-web-img.moonshot.cn/img/www.nvidia.com/0b731624cc255c37b6c83431d3b31f32edaaba30.png" alt="Abstract representation of an AI fashion recommendation system showing neural network connections and style elements" class="w-full h-full object-cover" size="large" aspect="wide" query="AI fashion recommendation system abstract" referrerpolicy="no-referrer" data-modified="1" data-score="0.00"/>
-              <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+  <!-- Hero Section -->
+  <section id="hero" class="px-8 py-12 fade-in">
+    <div class="max-w-7xl mx-auto">
+      <div class="hero-grid">
+        <div class="hero-image bg-gradient-to-br from-rose-100 to-amber-100 flex items-center justify-center">
+          <img src="https://kimi-web-img.moonshot.cn/img/www.nvidia.com/0b731624cc255c37b6c83431d3b31f32edaaba30.png" alt="Abstract representation of an AI fashion recommendation system showing neural network connections and style elements" class="w-full h-full object-cover" size="large" aspect="wide" query="AI fashion recommendation system abstract" referrerpolicy="no-referrer" data-modified="1" data-score="0.00"/>
+          <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+        </div>
+        <div class="hero-text">
+          <!-- Main Heading -->
+          <h1 class="serif-display text-2xl font-bold text-gray-800 mb-2 leading-tight"> <!-- Adjusted size and color -->
+            Flop-ai's AI power Dress Recommendation System
+          </h1>
+          <!-- Sub-heading (Changed from h1 to h2) -->
+          <h2 class="serif-display text-3xl font-bold text-gray-900 mb-4 leading-tight"> <!-- Reduced size -->
+            <em class="text-amber-600">Building an AI-Powered</em>
+            <br/>
+            Dress Recommendation System
+          </h2>
+          <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+            A complete, open‑source building personalized fashion recommendations  system / mirror that combine computer vision, body type analysis, and trend integration. This document doubles as your project .
+          </p>
+          <div class="grid grid-cols-1 gap-4 text-sm">
+            <div class="accent-border">
+              <h4 class="font-semibold text-gray-800">Computer Vision</h4>
+              <p class="text-gray-600">VGG16, ResNet50, Vision Transformers</p>
             </div>
-
-            <div class="hero-text">
-              <h1 class="serif-display text-4xl font-bold text-gray-900 mb-6 leading-tight">
-                <em class="text-amber-600">Building an AI-Powered</em>
-                <br/>
-                Dress Recommendation System
-              </h1>
-              <p class="text-xl text-gray-600 mb-8 leading-relaxed">
-                A comprehensive guide to creating intelligent fashion recommendations through computer vision, body type analysis, and trend integration
-              </p>
-              <div class="grid grid-cols-1 gap-4 text-sm">
-                <div class="accent-border">
-                  <h4 class="font-semibold text-gray-800">Computer Vision</h4>
-                  <p class="text-gray-600">VGG16, ResNet50, Vision Transformers</p>
-                </div>
-                <div class="accent-border">
-                  <h4 class="font-semibold text-gray-800">Hybrid AI</h4>
-                  <p class="text-gray-600">Content + Collaborative Filtering</p>
-                </div>
-                <div class="accent-border">
-                  <h4 class="font-semibold text-gray-800">Multimodal</h4>
-                  <p class="text-gray-600">CLIP, LLMs, Virtual Try-On</p>
-                </div>
-              </div>
+            <div class="accent-border">
+              <h4 class="font-semibold text-gray-800">Hybrid AI</h4>
+              <p class="text-gray-600">Content + Collaborative Filtering</p>
+            </div>
+            <div class="accent-border">
+              <h4 class="font-semibold text-gray-800">Multimodal</h4>
+              <p class="text-gray-600">CLIP, LLMs, Virtual Try-On</p>
             </div>
           </div>
         </div>
-      </section>
+      </div>
+    </div>
+  </section>
 
       <!-- Executive Summary -->
       <section id="executive-summary" class="px-8 py-12 bg-white/50">
@@ -252,13 +263,13 @@
           <h2 class="serif-display text-3xl font-bold text-gray-900 mb-8">Executive Summary</h2>
           <div class="prose prose-lg max-w-none">
             <p class="text-xl text-gray-700 leading-relaxed mb-6">
-              To build a program that recommends dresses based on body type, current trends, and color combinations, you can create a hybrid AI system. This system would use <strong>pre-trained Convolutional Neural Networks (CNNs) like VGG16 or ResNet50</strong> to extract visual features from your dress images.
+              To build a smart mirror that recommends dresses based on body type, current trends, and color combinations, you can create a hybrid AI system. This system would use <strong>pre-trained Convolutional Neural Networks (CNNs) </strong> to extract visual features from your dress images.
             </p>
 
             <div class="bg-gradient-to-r from-rose-50 to-amber-50 p-6 rounded-lg my-8">
               <h3 class="serif-display text-xl font-semibold text-gray-900 mb-4">Key System Components</h3>
               <ul class="space-y-3 text-gray-700">
-                <li><strong>Visual Analysis Module:</strong> Pre-trained CNNs for feature extraction <a href="#ref-214" class="citation-link">[214]</a>
+                <li><strong>Visual Analysis Module:</strong> Pre-trained CNNs for feature extraction 
                 </li>
                 <li><strong>Body Type Integration:</strong> AI-backed styling rules for pear, apple, hourglass shapes</li>
                 <li><strong>Trend Analysis:</strong> NLP on social media and fashion APIs for current styles</li>
@@ -282,13 +293,13 @@
             <div class="bg-white p-6 rounded-lg shadow-sm">
               <h3 class="serif-display text-xl font-semibold text-gray-900 mb-4">Core Components</h3>
               <p class="text-gray-700 mb-4">
-                A sophisticated AI-powered dress recommendation system is composed of several interconnected components, each responsible for a specific aspect of the recommendation process <a href="#ref-208" class="citation-link">[208]</a>.
+                A sophisticated AI-powered dress recommendation system is composed of several interconnected components, each responsible for a specific aspect of the recommendation process. 
               </p>
               <ul class="space-y-2 text-gray-600">
-                <li>• Visual Analysis Module (CNNs)</li>
-                <li>• Color Analysis Module (OpenCV)</li>
+                <li>• Visual Analysis Module </li>
+                <li>• Color Analysis Module </li>
                 <li>• Body Type Integration Module</li>
-                <li>• Trend Analysis Module (NLP)</li>
+                <li>• Trend Analysis Module </li>
                 <li>• Hybrid Recommendation Engine</li>
               </ul>
             </div>
@@ -296,7 +307,7 @@
             <div class="bg-white p-6 rounded-lg shadow-sm">
               <h3 class="serif-display text-xl font-semibold text-gray-900 mb-4">Data Flow Strategy</h3>
               <p class="text-gray-700 mb-4">
-                The data flow begins with collecting and preprocessing data from diverse sources, including the dress image dataset and user data <a href="#ref-246" class="citation-link">[246]</a>.
+                The data flow begins with collecting and preprocessing data from diverse sources, including the dress image dataset and user data.
               </p>
               <p class="text-gray-600">
                 Images are processed by CNNs for feature extraction while color analysis runs in parallel. User measurements feed into body type classification.
@@ -354,17 +365,17 @@
               <div>
                 <h4 class="text-xl font-semibold text-gray-900 mb-4">Using Pre-trained CNNs</h4>
                 <p class="text-gray-700 mb-4">
-                  Pre-trained Convolutional Neural Networks (CNNs) like VGG16 and ResNet50 are powerful tools for extracting meaningful features from dress images, forming the backbone of the visual analysis component <a href="#ref-214" class="citation-link">[214]</a>
-                  <a href="#ref-248" class="citation-link">[248]</a>.
+                  Pre-trained Convolutional Neural Networks (CNNs) is  powerful deep learning model for extracting meaningful features from dress images, forming the backbone of the visual analysis components
+                  
                 </p>
 
                 <div class="bg-gray-50 p-4 rounded-lg">
                   <h5 class="font-semibold text-gray-900 mb-2">Popular Models:</h5>
                   <ul class="space-y-1 text-gray-600 text-sm">
-                    <li>• VGG16 - Simple uniform architecture</li>
-                    <li>• ResNet50 - Residual connections for deeper networks</li>
-                    <li>• InceptionV3 - Multi-scale feature extraction</li>
-                    <li>• DenseNet-121 - Dense connectivity patterns</li>
+                    <li>• Simple uniform architecture</li>
+                    <li>• Residual connections for deeper networks</li>
+                    <li>• Multi-scale feature extraction</li>
+                    <li>• Dense connectivity patterns</li>
                   </ul>
                 </div>
               </div>
@@ -380,7 +391,7 @@
 
             <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-6 rounded-lg">
               <p class="text-gray-700 mb-4">
-                While CNNs have been dominant, Vision Transformers (ViTs) have emerged as a powerful alternative for feature extraction in fashion recommendation systems. Recent studies show ViTs achieving state-of-the-art performance <a href="#ref-251" class="citation-link">[251]</a>.
+                While CNNs have been dominant, Vision Transformers (ViTs) have emerged as a powerful alternative for feature extraction in fashion recommendation systems. Recent studies show ViTs achieving state-of-the-art performance .
               </p>
 
               <div class="grid md:grid-cols-2 gap-6">
@@ -412,9 +423,9 @@
 
           <div class="grid lg:grid-cols-2 gap-8">
             <div>
-              <h4 class="text-xl font-semibold text-gray-900 mb-4">Extracting Dominant Colors with OpenCV</h4>
+              <h4 class="text-xl font-semibold text-gray-900 mb-4">Extracting Dominant Colors with Computer Vision</h4>
               <p class="text-gray-700 mb-4">
-                Color is critical for fashion recommendations. OpenCV provides powerful tools for color analysis, including HSV color space conversion and K-Means clustering for dominant color extraction <a href="#ref-217" class="citation-link">[217]</a>
+                Color is critical for fashion recommendations. Computer Vision provides powerful tools for color analysis, including HSV color space conversion and K-Means clustering for dominant color extraction 
                 <a href="#ref-239" class="citation-link">[239]</a>.
               </p>
 
@@ -433,7 +444,7 @@
             <div>
               <h4 class="text-xl font-semibold text-gray-900 mb-4">Color Palette Analysis</h4>
               <p class="text-gray-700 mb-4">
-                Beyond dominant colors, sophisticated systems analyze color combinations using color theory principles <a href="#ref-238" class="citation-link">[238]</a>.
+                Beyond dominant colors, sophisticated systems analyze color combinations using color theory principles.
               </p>
 
               <div class="space-y-3">
@@ -583,7 +594,7 @@
                 </div>
                 <h4 class="font-semibold text-gray-900 mb-3">NLP Analysis</h4>
                 <p class="text-gray-600 text-sm mb-3">
-                  Analyze fashion blogs and social media using Natural Language Processing to identify trending terms and styles <a href="#ref-382" class="citation-link">[382]</a>.
+                  Analyze fashion blogs and social media using Natural Language Processing to identify trending terms and styles .
                 </p>
                 <ul class="text-xs text-gray-500 space-y-1">
                   <li>• Instagram caption analysis</li>
@@ -613,8 +624,8 @@
                 </div>
                 <h4 class="font-semibold text-gray-900 mb-3">Fashion APIs</h4>
                 <p class="text-gray-600 text-sm mb-3">
-                  Integrate specialized fashion trend APIs for reliable, curated trend information <a href="#ref-371" class="citation-link">[371]</a>
-                  <a href="#ref-381" class="citation-link">[381]</a>.
+                  Integrate specialized fashion trend APIs for reliable, curated trend information 
+                  
                 </p>
                 <ul class="text-xs text-gray-500 space-y-1">
                   <li>• IBM AI for Fashion API</li>
@@ -820,7 +831,7 @@
               <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mb-4">
                 <i class="fas fa-image text-green-600 text-xl"></i>
               </div>
-              <h4 class="font-semibold text-gray-900 mb-3">OpenCV</h4>
+              <h4 class="font-semibold text-gray-900 mb-3">Computer Vision</h4>
               <p class="text-gray-600 text-sm mb-3">
                 Critical for image processing and color analysis components.
               </p>
@@ -990,6 +1001,82 @@
                     <li>• Differentiates from competitors</li>
                     <li>• Represents future of online fashion retail</li>
                   </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+            <!-- Section 7: Team Members -->
+      <section id="team" class="px-8 py-12">
+        <div class="max-w-6xl mx-auto">
+          <h2 class="serif-display text-4xl font-bold text-gray-900 mb-8">7. Team Members</h2>
+          <div class="bg-gradient-to-r from-gray-50 to-amber-50 p-8 rounded-lg">
+            <p class="text-gray-700 mb-6">
+              This project was conceptualized and developed by the dedicated team at Flop-ai. Meet the minds behind the innovation:
+            </p>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div class="bg-white p-4 rounded-lg shadow-sm flex items-center">
+                <div class="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 mr-4" aria-label="Placeholder image for Aluph Shahim"></div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">Aluph Shahim</h4>
+                  <a href="#" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-500 hover:underline flex items-center">
+                    LinkedIn Profile <i class="fab fa-linkedin ml-1"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="bg-white p-4 rounded-lg shadow-sm flex items-center">
+                <div class="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 mr-4" aria-label="Placeholder image for Anif Shahim"></div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">Anif Shahim</h4>
+                  <a href="#" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-500 hover:underline flex items-center">
+                    LinkedIn Profile <i class="fab fa-linkedin ml-1"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="bg-white p-4 rounded-lg shadow-sm flex items-center">
+                <div class="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 mr-4" aria-label="Placeholder image for Sharath"></div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">Sharath</h4>
+                  <a href="#" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-500 hover:underline flex items-center">
+                    LinkedIn Profile <i class="fab fa-linkedin ml-1"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="bg-white p-4 rounded-lg shadow-sm flex items-center">
+                <div class="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 mr-4" aria-label="Commonary Labs Logo or Placeholder"></div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">Commonary Labs</h4>
+                  <a href="#" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-500 hover:underline flex items-center">
+                    LinkedIn Page <i class="fab fa-linkedin ml-1"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="bg-white p-4 rounded-lg shadow-sm flex items-center">
+                <div class="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 mr-4" aria-label="Placeholder image for Muhsin PK"></div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">Muhsin PK</h4>
+                  <a href="#" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-500 hover:underline flex items-center">
+                    LinkedIn Profile <i class="fab fa-linkedin ml-1"></i>
+                  </a>
+                </div>
+              </div>
+              <div class="bg-white p-4 rounded-lg shadow-sm flex items-center">
+                <div class="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 mr-4" aria-label="Placeholder image for Muhammed Irfan"></div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">Muhammed Irfan</h4>
+                  <a href="#" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-500 hover:underline flex items-center">
+                    LinkedIn Profile <i class="fab fa-linkedin ml-1"></i>
+                  </a>
+                </div>
+              </div>
+               <div class="bg-white p-4 rounded-lg shadow-sm flex items-center">
+                <div class="bg-gray-200 border-2 border-dashed rounded-xl w-16 h-16 mr-4" aria-label="Placeholder image for Isham Sulaiman"></div>
+                <div>
+                  <h4 class="font-semibold text-gray-900">Isham Sulaiman</h4>
+                  <a href="#" target="_blank" rel="noopener noreferrer" class="text-sm text-blue-500 hover:underline flex items-center">
+                    LinkedIn Profile <i class="fab fa-linkedin ml-1"></i>
+                  </a>
                 </div>
               </div>
             </div>
